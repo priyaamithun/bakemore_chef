@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/bakemore_chef/precache-manifest.38944b7a1dfba796f4f5d1606d00b264.js"
+  "/bakemore_chef/precache-manifest.f03a5160cf27283e883c818ad0dd70e2.js"
 );
 
 workbox.clientsClaim();
