@@ -1,0 +1,738 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; }
+
+.pimg1 {
+  background-image: url("./Components/parallex-images/image.png");
+  min-height: 60vh;
+  background-size: cover; }
+
+.ptext {
+  text-align: center;
+  font-family: "Satisfy", cursive;
+  color: wheat; }
+  .ptext h1 {
+    margin-top: 30px;
+    font-size: 1.8rem; }
+  .ptext img {
+    height: 150px;
+    width: 150px; }
+
+.nav {
+  display: inline-grid;
+  grid-template-columns: .6fr 1.5fr;
+  padding-top: 20px;
+  padding-left: 1px;
+  font-weight: bold; }
+  .nav img {
+    height: 75px;
+    width: 75px; }
+  .nav ul li {
+    display: inline-block;
+    margin: 20px 10px 0 10px;
+    font-size: 1rem; }
+  .nav li a {
+    color: wheat; }
+
+.section-dark-1 img {
+  height: 350px;
+  width: 300px;
+  margin-left: 40px; }
+
+.aboutMe-content h2 {
+  color: goldenrod;
+  margin-top: 50px;
+  font-size: 2.5rem;
+  font-family: "Satisfy", cursive;
+  text-transform: capitalize;
+  text-align: center; }
+.aboutMe-content p {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-left: 5px;
+  margin-right: 5px; }
+.aboutMe-content .firstLetter {
+  font-size: 3rem;
+  font-family: "Great Vibes", cursive; }
+.aboutMe-content .link {
+  color: goldenrod;
+  font-size: 2rem;
+  margin-left: 65px;
+  font-weight: bold;
+  font-family: "Great Vibes", cursive; }
+.aboutMe-content hr {
+  width: 25%;
+  margin-left: 140px;
+  background-color: goldenrod; }
+
+.pimg2 {
+  background-image: url("./Components/parallex-images/image-2.png");
+  min-height: 150px;
+  background-size: cover; }
+  .pimg2 .ptext-icon .social-icons h3 {
+    padding-top: 50px; }
+  .pimg2 .ptext-icon i {
+    padding: 10px; }
+
+.about {
+  overflow: auto;
+  color: white;
+  background-image: url(./Components/parallex-images/bake-baked-bakery-1028714.jpg);
+  background-size: cover;
+  height: 655px; }
+  .about h5 {
+    font-size: 1.4rem; }
+  .about h3 {
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif; }
+  .about .intro-content {
+    margin: 10px;
+    background-color: rgba(116, 112, 112, 0.5);
+    height: 430px;
+    width: 300;
+    padding: 50px;
+    letter-spacing: 1px;
+    font-family: "Satisfy", cursive; }
+  .about .GoBack a {
+    border: 2px solid white;
+    position: absolute;
+    color: white;
+    margin-left: 35%;
+    margin-top: 5%;
+    font-size: 1rem;
+    padding: 10px;
+    font-style: italic;
+    background-color: rgba(116, 112, 112, 0.5); }
+  .about .GoBack a:hover {
+    background-color: #906C5A;
+    font-size: 1.3rem; }
+
+.gallery {
+  height: 550px;
+  margin-right: 30px; }
+  .gallery .BtnSlider {
+    margin-bottom: 10%;
+    margin-top: 10%;
+    margin-left: 35%; }
+  .gallery .card img {
+    height: 340px;
+    width: 100%;
+    filter: brightness(100%); }
+  .gallery .cards-slider-wrapper {
+    display: flex;
+    position: absolute;
+    transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+    .gallery .cards-slider-wrapper .card {
+      flex: 1;
+      min-width: 200px;
+      opacity: 0.5;
+      transform: scale(0.7);
+      transition: opacity 300ms linear, transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+  .gallery .cards-slider.active-slide-0 #card-0 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-1 #card-1 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-2 #card-2 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-3 #card-3 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-4 #card-4 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-5 #card-5 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-6 #card-6 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-7 #card-7 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-8 #card-8 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-9 #card-9 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-10 #card-10 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-11 #card-11 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-12 #card-12 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-13 #card-13 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-14 #card-14 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-15 #card-15 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-16 #card-16 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-17 #card-17 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-18 #card-18 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-19 #card-19 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-20 #card-20 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-21 #card-21 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-22 #card-22 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-23 #card-23 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-24 #card-24 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-25 #card-25 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-26 #card-26 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-27 #card-27 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-28 #card-28 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-29 #card-29 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-30 #card-30 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-31 #card-31 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-32 #card-32 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider {
+    position: relative;
+    max-width: 290px;
+    margin: 0 auto; }
+    .gallery .cards-slider::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 385px;
+      outline: 5px solid #333;
+      position: absolute;
+      top: 0;
+      left: 14px; }
+  .gallery .index {
+    font-size: 2rem;
+    margin-left: 120px; }
+
+.pimg3 {
+  background-image: url("./Components/parallex-images/contact-image.jpg");
+  height: 800px; }
+
+.contact_me {
+  font-family: "Satisfy", cursive; }
+  .contact_me h3 {
+    color: wheat;
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+    padding-top: 20px; }
+  .contact_me .details {
+    margin-top: 50px;
+    font-size: 2rem;
+    color: wheat; }
+    .contact_me .details p {
+      margin-left: 30px;
+      font-size: 1.5rem; }
+    .contact_me .details span {
+      margin-left: 60px;
+      font-size: 1.5rem; }
+    .contact_me .details p i {
+      padding-right: 10px; }
+
+.contact-content .contact-form {
+  color: wheat; }
+  .contact-content .contact-form .btn {
+    font-family: "Oswald", sans-serif; }
+  .contact-content .contact-form .contact {
+    margin-left: 10px; }
+    .contact-content .contact-form .contact .form-control {
+      color: wheat;
+      font-size: 1.5rem;
+      -webkit-appearance: none; }
+.contact-content .contact label {
+  color: wheat;
+  font-size: 1.5rem; }
+
+.footer {
+  color: lightgray;
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  background-color: #333;
+  font-size: 1rem;
+  padding: 10px; }
+  .footer .footer-copyright {
+    font-style: italic; }
+  .footer .social-icons, .footer a {
+    color: lightgray;
+    padding: 5px; }
+
+@media only screen and (min-width: 60rem) {
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666; }
+
+  h5 {
+    margin: 5px;
+    font-style: italic;
+    font-size: 1.4rem; }
+
+  .firstLetter {
+    font-size: 3rem;
+    font-family: "Great Vibes", cursive; }
+
+  .pimg1, .pimg2, .pimg3 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: .9; }
+
+  .pimg1 {
+    background-image: url("./Components/parallex-images/image.png");
+    min-height: 100vh; }
+
+  .pimg2 {
+    background-image: url("./Components/parallex-images/image-2.png");
+    min-height: 400px; }
+
+  .pimg3 {
+    background-image: url("./Components/parallex-images/contact-image.jpg");
+    height: 600px; }
+
+  .section-dark-1 {
+    display: grid;
+    grid-template-columns: 2fr  1fr; }
+    .section-dark-1 .aboutMe-content h2 {
+      color: goldenrod;
+      margin-top: 50px;
+      font-size: 3rem;
+      font-family: "Satisfy", cursive;
+      text-transform: capitalize;
+      text-align: center; }
+    .section-dark-1 img {
+      height: 480px;
+      width: 400px; }
+    .section-dark-1 p {
+      margin-top: 30px;
+      padding: 10px;
+      margin-left: 50px;
+      margin-bottom: 40px; }
+    .section-dark-1 .link {
+      color: goldenrod;
+      font-size: 1.9rem;
+      margin-left: 350px;
+      font-family: "Great Vibes", cursive; }
+    .section-dark-1 hr {
+      width: 20%;
+      margin-left: 350px;
+      background-color: goldenrod; }
+
+  .section-2 {
+    overflow: hidden;
+    height: 590px; }
+
+  .ptext {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    font-size: 15px; }
+
+  .ptext h1 {
+    font-size: 3rem;
+    color: white;
+    font-family: "Satisfy", cursive; }
+
+  .ptext-icon {
+    top: 20%; }
+
+  .ptext-icon h3 {
+    font-size: 3rem;
+    color: wheat;
+    font-family: "Satisfy", cursive; }
+
+  .social-icons .fab, .fas {
+    font-size: 3rem;
+    color: wheat; }
+
+  .nav {
+    display: inline-grid;
+    grid-template-columns: 1.5fr 1fr;
+    padding-top: 20px;
+    padding-left: 100px;
+    margin-left: 350px; }
+    .nav img {
+      height: 100px;
+      width: 100px; }
+    .nav ul li {
+      display: inline-block;
+      margin-top: 25px;
+      margin-right: 50px;
+      margin-left: 30px; }
+    .nav ul li a {
+      font-family: "Oswald", sans-serif;
+      color: wheat;
+      text-transform: uppercase; }
+    .nav .button {
+      cursor: pointer; }
+  @keyframes wobble-horizontal {
+    16.65% {
+      transform: translateX(8px); }
+    33.3% {
+      transform: translateX(-6px); }
+    49.95% {
+      transform: translateX(4px); }
+    66.6% {
+      transform: translateX(-2px); }
+    83.25% {
+      transform: translateX(1px); }
+    100% {
+      transform: translateX(0); } }
+    .nav .wobble-horizontal {
+      display: inline-block; }
+      .nav .wobble-horizontal:hover {
+        animation-name: wobble-horizontal;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        color: wheat; }
+    .nav .image-logo {
+      background-image: url("./Components/parallex-images/bakemore-logo.png");
+      z-index: 1; }
+
+  .gallery .BtnSlider {
+    margin-bottom: 5%;
+    margin-top: 3%;
+    margin-left: 45%; }
+  .gallery .img {
+    height: 340px;
+    width: 100%;
+    filter: brightness(100%); }
+  .gallery .cards-slider-wrapper {
+    display: flex;
+    position: absolute;
+    transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+    .gallery .cards-slider-wrapper .card {
+      flex: 1;
+      min-width: 200px;
+      opacity: 0.5;
+      transform: scale(0.7);
+      transition: opacity 300ms linear, transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+  .gallery .cards-slider.active-slide-0 #card-0 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-1 #card-1 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-2 #card-2 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-3 #card-3 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-4 #card-4 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-5 #card-5 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-6 #card-6 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-7 #card-7 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-8 #card-8 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-9 #card-9 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-10 #card-10 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-11 #card-11 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-12 #card-12 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-13 #card-13 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-14 #card-14 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-15 #card-15 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-16 #card-16 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-17 #card-17 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-18 #card-18 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-19 #card-19 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-20 #card-20 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-21 #card-21 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-22 #card-22 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-23 #card-23 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-24 #card-24 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-25 #card-25 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-26 #card-26 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-27 #card-27 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-28 #card-28 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-29 #card-29 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-30 #card-30 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-31 #card-31 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider.active-slide-32 #card-32 {
+    opacity: 1;
+    transform: scale(1); }
+  .gallery .cards-slider {
+    position: relative;
+    max-width: 290px; }
+    .gallery .cards-slider::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 385px;
+      outline: 5px solid #333;
+      position: absolute;
+      top: 0;
+      left: 14px; }
+  .gallery .index {
+    font-size: 2rem;
+    margin-left: 120px; }
+
+  .contact_me {
+    font-family: "Satisfy", cursive; }
+    .contact_me h3 {
+      color: wheat;
+      text-align: center;
+      font-size: 2rem;
+      font-style: italic;
+      padding-top: 20px; }
+    .contact_me .details {
+      margin-top: 50px;
+      font-size: 2rem;
+      color: wheat; }
+      .contact_me .details p {
+        margin: 30px;
+        font-size: 1.5rem; }
+      .contact_me .details p i {
+        font-size: 1rem; }
+
+  .contact-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; }
+    .contact-content .contact-form {
+      color: wheat; }
+      .contact-content .contact-form .btn {
+        font-family: "Oswald", sans-serif; }
+      .contact-content .contact-form .contact {
+        margin-left: 60px; }
+        .contact-content .contact-form .contact .form-control {
+          color: wheat;
+          font-size: 1.5rem;
+          -webkit-appearance: none; }
+    .contact-content .contact label {
+      color: wheat;
+      font-size: 1.5rem; }
+
+  .footer {
+    color: lightgray;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #333; }
+    .footer .footer-copyright {
+      font-style: italic;
+      padding: 10px; }
+    .footer .icons {
+      margin-top: 10px; }
+    .footer .social-icons, .footer a {
+      color: lightgray;
+      margin: 10px; }
+
+  .about {
+    overflow: auto;
+    color: white;
+    background-image: url(./Components/parallex-images/bake-baked-bakery-1028714.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    height: 655px; }
+    .about h5 {
+      font-size: 1.5rem; }
+    .about h3 {
+      text-transform: uppercase;
+      font-family: "Oswald", sans-serif; }
+    .about .intro-content {
+      margin-top: 100px;
+      background-color: rgba(116, 112, 112, 0.5);
+      height: 300px;
+      width: 600px;
+      padding: 50px;
+      margin-left: 60px;
+      letter-spacing: 1px;
+      font-family: "Satisfy", cursive; }
+    .about .GoBack a {
+      border: 2px solid white;
+      position: absolute;
+      color: white;
+      margin-left: 20%;
+      margin-top: 5%;
+      font-size: 1rem;
+      padding: 10px;
+      font-style: italic;
+      background-color: rgba(116, 112, 112, 0.5); }
+    .about .GoBack a:hover {
+      background-color: #906C5A;
+      font-size: 1.3rem; } }

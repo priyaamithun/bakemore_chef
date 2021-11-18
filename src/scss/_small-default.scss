@@ -1,0 +1,342 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+
+
+
+.pimg1{
+    background-image: url('./Components/parallex-images/image.png');
+    min-height:60vh;
+    background-size: cover;
+
+}
+.ptext{
+    text-align: center;
+    font-family: $newFont;
+    color: wheat;
+    
+    h1{
+        margin-top:30px;
+        font-size:1.8rem;
+    }
+img{
+    
+        height:150px;
+        width:150px;
+}
+}
+
+
+    .nav{
+        
+        display: inline-grid;
+        grid-template-columns: .6fr 1.5fr;
+        padding-top:20px; 
+        padding-left:1px;
+        font-weight: bold;
+        
+        
+    img{
+        height:75px;
+        width:75px;
+    }
+    ul li{
+display:inline-block;
+margin:20px 10px 0 10px;
+font-size: 1rem;
+    }
+    li a {
+        color:wheat;
+    }
+}
+.section-dark-1{
+    img{
+        height:350px;
+        width:300px;
+        margin-left:40px;
+    }
+}
+.aboutMe-content{
+
+
+h2{
+    color:goldenrod;
+    margin-top:50px;
+    font-size:2.5rem;
+    font-family: $newFont;
+    text-transform: capitalize;
+    text-align: center;
+   
+}
+
+p{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left:5px;
+    margin-right:5px;
+}
+.firstLetter{
+    font-size:3rem;
+    font-family: $advanceFont;
+}
+.link {
+    color:goldenrod;
+    font-size: 2rem;
+      margin-left:65px ;
+      font-weight: bold;
+      font-family: $advanceFont;
+      }
+      hr{
+          width:25%;
+          margin-left:140px;
+          background-color:goldenrod;
+      }
+    }
+
+    .pimg2{
+        background-image: url('./Components/parallex-images/image-2.png');
+        min-height: 150px;
+        background-size: cover;
+    
+    
+
+
+.ptext-icon{
+     .social-icons h3{
+        padding-top:50px;
+    }
+    i{
+        padding:10px;
+    }
+}
+    }
+
+//about me link page
+
+
+
+.about{
+    overflow:auto;
+    color:white;
+    background-image: url(./Components/parallex-images/bake-baked-bakery-1028714.jpg);
+    background-size:cover;
+    height:655px;
+    h5{
+
+    
+    font-size: 1.4rem;
+    }
+  h3{
+    text-transform: uppercase;
+    font-family: $basic-font;  
+  }
+ .intro-content{
+  margin:10px;
+background-color: rgba(116, 112, 112, 0.5);
+
+height:430px;
+width:300;
+padding:50px;
+
+letter-spacing: 1px;
+font-family: $newFont;
+
+ }
+  
+   .GoBack{ 
+       a{
+       border:2px solid white;
+       position: absolute;
+    color:white;
+    margin-left:35%;
+    margin-top:5%;
+    font-size: 1rem;
+    padding:10px;
+    font-style: italic;
+    background-color: rgba(116, 112, 112, 0.5);
+
+   }
+   a:hover{
+       background-color: #906C5A;
+       font-size: 1.3rem;
+   }
+   } 
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+    //Gallery //
+
+    
+    .gallery{
+        height:550px;
+      margin-right:30px;
+    
+        .BtnSlider{
+            margin-bottom: 10%;
+            margin-top: 10%;
+            margin-left:35%;
+        }
+        
+        .card img{
+            height:340px;
+            width:100%;
+            filter: brightness(100%);
+            
+            }
+        .cards-slider-wrapper{
+            display: flex;
+            position: absolute;
+            transition: transform 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+        .card{
+        flex: 1;
+        min-width: 200px;
+        opacity: 0.5;
+        transform: scale(0.7);
+        transition: opacity 300ms linear ,transform 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+            }
+        }
+        
+        $i:0;
+        @for $i from 0 through 32 {
+            .cards-slider.active-slide-#{$i} #card-#{$i}{
+            opacity: 1;
+            transform: scale(1);
+            }
+        }    
+        .cards-slider {
+            position: relative;
+            max-width: 290px;
+            margin: 0 auto; 
+          &::after{
+        
+              content: '';
+              display: block;
+              width: 100%;
+              height: 385px;
+              outline: 5px solid #333;
+              position: absolute;
+              top: 0;
+              left: 14px; }
+          }
+          .index{
+              font-size: 2rem;
+              margin-left:120px;
+          }
+        }
+       
+
+
+        .pimg3{
+            background-image: url('./Components/parallex-images/contact-image.jpg');
+            height: 800px;
+        }
+
+   
+        .contact_me {
+        
+            font-family: $newFont;
+    h3{
+    color:wheat;
+    text-align: center;
+    font-size:2rem;
+    font-style: italic;
+    padding-top:20px;
+    
+    }   
+    .details {
+        
+        margin-top:50px;
+        font-size: 2rem;
+        
+        color:wheat;
+        
+p{
+    margin-left:30px;
+    font-size:1.5rem;
+}
+span{
+    margin-left:60px;
+    font-size:1.5rem;
+}
+p i{
+    // font-size: 1.5rem;
+    padding-right:10px;
+}
+}
+}   
+        
+
+
+
+        
+        .contact-content{
+           
+        
+    .contact-form{
+        .btn{
+            
+            font-family: $basic-font;
+            
+        }
+        .contact{
+            .form-control{
+                color:wheat;
+                font-size: 1.5rem;
+                -webkit-appearance: none;
+
+
+                        }
+            
+            margin-left:10px;
+        }
+        color:wheat;
+    }
+    .contact label{
+        
+        color:wheat;
+        font-size: 1.5rem;
+    }
+   
+    
+        
+    }
+
+
+    .footer{ 
+        color:lightgray;
+        display:grid;
+        grid-template-columns: 2.5fr 1fr;
+        background-color: #333;
+        font-size: 1rem;
+        padding:10px;
+        .footer-copyright{
+            font-style: italic;
+        
+        }
+        
+
+            .social-icons, a{
+color:lightgray;
+padding:5px;
+    
+    }
+        }
+   
