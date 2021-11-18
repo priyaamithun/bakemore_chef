@@ -80,12 +80,12 @@ self.__precacheManifest = [
     "url": "/bakemore_chef/static/media/fa-regular-400.c5d109be.svg"
   },
   {
-    "revision": "d824df7eb2e268626a2dd9a6a741ac4e",
-    "url": "/bakemore_chef/static/media/fa-solid-900.d824df7e.woff2"
-  },
-  {
     "revision": "0c6bfc668a72935760178f91327aed3a",
     "url": "/bakemore_chef/static/media/fa-solid-900.0c6bfc66.eot"
+  },
+  {
+    "revision": "d824df7eb2e268626a2dd9a6a741ac4e",
+    "url": "/bakemore_chef/static/media/fa-solid-900.d824df7e.woff2"
   },
   {
     "revision": "d745348d289b149026921f197929a893",
